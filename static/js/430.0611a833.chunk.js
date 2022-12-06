@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[430],{430:function(e,s,t){e.exports=t.p+"static/media/spriteLeft.fad90cb5e9a183ccac62.png"}}]);

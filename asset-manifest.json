@@ -1,20 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb2f8bf9.css",
-    "main.js": "/static/js/main.259df487.js",
+    "main.css": "/static/css/main.59a5e40e.css",
+    "main.js": "/static/js/main.96c621f1.js",
+    "static/js/55.2b0059cc.chunk.js": "/static/js/55.2b0059cc.chunk.js",
+    "static/js/415.ed157181.chunk.js": "/static/js/415.ed157181.chunk.js",
+    "static/js/430.0611a833.chunk.js": "/static/js/430.0611a833.chunk.js",
+    "static/js/688.970e5f94.chunk.js": "/static/js/688.970e5f94.chunk.js",
     "static/js/787.bbe01249.chunk.js": "/static/js/787.bbe01249.chunk.js",
-    "static/media/world.png": "/static/media/world.8c4c27c8b44afce8a6d9.png",
-    "static/media/heroDown.png": "/static/media/heroDown.de136701c195f62c2f0c.png",
-    "static/media/heroUp.png": "/static/media/heroUp.728a02b3f08ef48df612.png",
-    "static/media/heroLeft.png": "/static/media/heroLeft.fad90cb5e9a183ccac62.png",
-    "static/media/heroRight.png": "/static/media/heroRight.95c5d076ee987a14e043.png",
+    "static/media/world.png": "/static/media/world.dbee0b12cee3a0dc35cb.png",
+    "static/media/minecraft-webfont.ttf": "/static/media/minecraft-webfont.81f6c7f882fcc2dee106.ttf",
+    "static/media/spriteDown.png": "/static/media/spriteDown.de136701c195f62c2f0c.png",
+    "static/media/spriteUp.png": "/static/media/spriteUp.728a02b3f08ef48df612.png",
+    "static/media/minecraft-webfont.woff": "/static/media/minecraft-webfont.ab63f069794de6223be8.woff",
+    "static/media/spriteLeft.png": "/static/media/spriteLeft.fad90cb5e9a183ccac62.png",
+    "static/media/spriteRight.png": "/static/media/spriteRight.eed6b767781e51272a16.png",
+    "static/media/minecraft-webfont.woff2": "/static/media/minecraft-webfont.f9423632ad708b516bb3.woff2",
+    "static/media/loader.svg": "/static/media/loader.5948185f92fbd7230750e4cd5b13198e.svg",
     "index.html": "/index.html",
-    "main.bb2f8bf9.css.map": "/static/css/main.bb2f8bf9.css.map",
-    "main.259df487.js.map": "/static/js/main.259df487.js.map",
+    "main.59a5e40e.css.map": "/static/css/main.59a5e40e.css.map",
+    "main.96c621f1.js.map": "/static/js/main.96c621f1.js.map",
     "787.bbe01249.chunk.js.map": "/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb2f8bf9.css",
-    "static/js/main.259df487.js"
+    "static/css/main.59a5e40e.css",
+    "static/js/main.96c621f1.js"
   ]
 }
