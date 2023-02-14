@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[688],{688:function(e,s,t){e.exports=t.p+"static/media/spriteRight.eed6b767781e51272a16.png"}}]);

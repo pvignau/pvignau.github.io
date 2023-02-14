@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[55],{55:function(e,s,t){e.exports=t.p+"static/media/spriteDown.de136701c195f62c2f0c.png"}}]);
