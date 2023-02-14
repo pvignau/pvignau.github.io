@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.59a5e40e.css",
-    "main.js": "/static/js/main.f22e3eb2.js",
+    "main.css": "/static/css/main.fae72d57.css",
+    "main.js": "/static/js/main.aad2a747.js",
     "static/js/55.2b0059cc.chunk.js": "/static/js/55.2b0059cc.chunk.js",
     "static/js/415.ed157181.chunk.js": "/static/js/415.ed157181.chunk.js",
     "static/js/430.0611a833.chunk.js": "/static/js/430.0611a833.chunk.js",
@@ -17,12 +17,12 @@
     "static/media/minecraft-webfont.woff2": "/static/media/minecraft-webfont.f9423632ad708b516bb3.woff2",
     "static/media/loader.svg": "/static/media/loader.5948185f92fbd7230750e4cd5b13198e.svg",
     "index.html": "/index.html",
-    "main.59a5e40e.css.map": "/static/css/main.59a5e40e.css.map",
-    "main.f22e3eb2.js.map": "/static/js/main.f22e3eb2.js.map",
+    "main.fae72d57.css.map": "/static/css/main.fae72d57.css.map",
+    "main.aad2a747.js.map": "/static/js/main.aad2a747.js.map",
     "787.bbe01249.chunk.js.map": "/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59a5e40e.css",
-    "static/js/main.f22e3eb2.js"
+    "static/css/main.fae72d57.css",
+    "static/js/main.aad2a747.js"
   ]
 }
