@@ -1,19 +1,115 @@
+/* CSS Variables for consistent theming */
+:root {
+  --loader-size: 100px;
+  --loader-position-right: 5%;
+  --loader-position-top: 80%;
+  --hint-offset-top: -100px;
+  --hint-offset-left: -200px;
+  --hint-max-width: 100px;
+  --primary-color: #000000;
+  --background-color: #ffffff;
+  --font-family-primary: minecraftmedium, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* CSS Reset/Normalize - Basic reset for consistent cross-browser behavior */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Loader Component Styles */
 #loader {
-    position: absolute;
-    right: 5%;
-    top: 80%;
+  position: absolute;
+  right: var(--loader-position-right);
+  top: var(--loader-position-top);
+  z-index: 1000;
 }
+
 #loader img {
-    width: 100px;
-    height: 100px;
+  width: var(--loader-size);
+  height: var(--loader-size);
+  object-fit: contain;
 }
-#lodaer .hint {
-    position: absolute;
-    top: -100px;
-    left: -200px;
-    max-width: 100px;
-    text-align: center;
+
+#loader .hint {
+  position: absolute;
+  top: var(--hint-offset-top);
+  left: var(--hint-offset-left);
+  max-width: var(--hint-max-width);
+  text-align: center;
+  font-family: var(--font-family-primary);
+  color: var(--primary-color);
+  font-size: 0.875rem;
+  line-height: 1.25;
 }
-#lodaer .hint.hidden {
-    display: none;
+
+#loader .hint.hidden {
+  display: none;
+}
+
+/* Responsive Design - Mobile First Approach */
+@media (max-width: 768px) {
+  :root {
+    --loader-size: 60px;
+    --loader-position-right: 10px;
+    --loader-position-top: 70%;
+    --hint-offset-top: -80px;
+    --hint-offset-left: -100px;
+    --hint-max-width: 80px;
+  }
+  
+  #loader .hint {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --loader-size: 50px;
+    --loader-position-right: 5px;
+    --loader-position-top: 60%;
+    --hint-offset-top: -60px;
+    --hint-offset-left: -75px;
+    --hint-max-width: 60px;
+  }
+  
+  #loader .hint {
+    font-size: 0.7rem;
+  }
+}
+
+/* Tablet landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --loader-size: 80px;
+    --loader-position-right: 3%;
+    --loader-position-top: 75%;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  :root {
+    --loader-size: 120px;
+    --loader-position-right: 5%;
+    --loader-position-top: 85%;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  #loader img {
+    animation: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  #loader .hint {
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    padding: 2px 4px;
+  }
 }
