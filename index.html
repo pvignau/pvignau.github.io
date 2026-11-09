@@ -1,29 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="stylesheet" href="css/main.css">
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="/logo192.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!--
+      Title, description, Open Graph tags and canonical URL come from src/content:
+      vite-plugins/site-pages.ts writes them in place of the next comment.
+    -->
+    <!-- site-meta -->
+    <title>Le monde de Pyve : portfolio et expériences interactives</title>
+    <meta name="description" content="Le portfolio de Pierre-Yves Vignau, alias Pyve, tech lead design system : un archipel en pixel art à explorer comme un mini-RPG, ou à lire en version texte." />
+    <link rel="canonical" href="https://pyve.is-a.dev/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Le monde de Pyve" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Le monde de Pyve : portfolio et expériences interactives" />
+    <meta property="og:description" content="Le portfolio de Pierre-Yves Vignau, alias Pyve, tech lead design system : un archipel en pixel art à explorer comme un mini-RPG, ou à lire en version texte." />
+    <meta property="og:url" content="https://pyve.is-a.dev/" />
+    <meta property="og:image" content="https://pyve.is-a.dev/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="En pixel art, le héros marche sur le ponton entre la maison et le bateau." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" href="/assets/world-ZliFcgVm.webp" as="image" />
+    <!-- /site-meta -->
+    <meta name="theme-color" content="#101820" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.json" />
-    <title>pyve's world</title>
-    <script type="module" crossorigin src="/assets/index-2425e84b.js"></script>
-    <link rel="stylesheet" href="/assets/index-d24c6efc.css">
+    <link
+      rel="preload"
+      href="/assets/pixelify-sans-latin-400-normal-DLrIX9QE.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/pixelify-sans-latin-700-normal-D3Xxx3QE.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <script>
+      // The game could not start (its script did not load, or failed before the app
+      // ran, see src/main.tsx): show the text version written in the page instead.
+      addEventListener(
+        'error',
+        function (event) {
+          var root = document.documentElement;
+          var fatal = event.target instanceof HTMLScriptElement || event instanceof ErrorEvent;
+          if (fatal && !root.hasAttribute('data-app')) root.classList.add('no-game');
+        },
+        true,
+      );
+    </script>
+    <script nomodule>
+      document.documentElement.classList.add('no-game');
+    </script>
+    <script type="module" crossorigin src="/assets/index-DPL-j_H7.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BFrgNuYy.css">
+    <noscript><style>html #loader{display:none!important}html .static-page{display:block!important}html body{overflow:auto!important}</style></noscript>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
-      <div id="loader">
-          <img src=/img/common/loader.svg alt='loader display' />
-          <p className="hint hidden"></p>
+      <div id="loader" class="loader" role="status">
+        <span class="loader__squares" aria-hidden="true"
+          ><span></span><span></span><span></span
+        ></span>
+        <span class="loader__label">Chargement de l&#39;île…</span>
       </div>
+      <!-- The text version (vite-plugins/static-page.ts), replaced by the game as it starts. -->
+      <main class="static-page"><h1>Pyve</h1><p class="static-page__role">Tech lead design system</p><p class="static-page__intro">Ce portfolio se visite d&#39;habitude comme un petit jeu, qui a besoin de JavaScript pour se lancer. Le voici en version texte :</p><p>Pierre-Yves Vignau, alias Pyve, est tech lead design system : son portfolio est un petit archipel en pixel art, à explorer comme un mini-RPG. Chaque lieu raconte une partie de son travail, de la maison au ponton. Une version texte reprend tout, pour qui préfère lire.</p><section><h2>Chez Pyve</h2><p>La porte grince. Salut, moi c&#39;est Pyve. Pierre-Yves Vignau, pour l&#39;état civil.</p><p>Je suis développeur web, basé au sud de Paris. Mon terrain de jeu : les design systems et les design tokens.</p><p>Depuis 2023, je suis tech lead du design system de France Télévisions, en freelance.</p><p>Mon inventaire :</p><ul><li>Design tokens : Style Dictionary, Tokens Studio, Terrazzo, format DTCG.</li><li>Front : TypeScript, React, Vue, Next.js, Storybook.</li><li>Figma : plugins et passerelles vers le code.</li><li>Domotique : Home Assistant, en Python.</li><li>IA : je code en binôme avec un agent.</li></ul><p>Ma méthode : partir de l&#39;existant, avancer par petits pas, et écrire la doc, limites comprises.</p><p>Le chemin parcouru :</p><ul><li>Depuis 2023 : tech lead design system, France Télévisions (freelance).</li><li>2014-2023 : Infopro Digital, de développeur web à head of frontend, en passant par lead dev et architecte front-end.</li><li>2012-2014 : développeur web en agence, PHP, Zend et Magento.</li></ul><p>Côté perso : papa de deux enfants, amateur de jeux vidéo et de deux-roues.</p><ul><li><a href="https://www.linkedin.com/in/pierre-yves-vignau-a99a9424/">Mon parcours sur LinkedIn</a></li></ul></section><section><h2>Quelques projets</h2><p>Le panneau est couvert d&#39;affiches. J&#39;en ai gardé quelques-unes, toutes publiques.</p><ul><li><h3>Contributions design tokens</h3><p>Un bug de la CLI de Terrazzo signalé puis corrigé, et une proposition de tokens dépréciés pour Tokens Studio, en attente de relecture.</p><p>Design tokens, DTCG, TypeScript</p><ul><li><a href="https://github.com/terrazzoapp/terrazzo/pull/533">Correctif Terrazzo</a></li><li><a href="https://github.com/tokens-studio/figma-plugin/pull/3834">PR Tokens Studio</a></li></ul></li><li><h3>Samsung Frame Artwork</h3><p>Une intégration Home Assistant qui fait tourner tableaux et photos sur une TV The Frame, sans couper ce que tu regardes.</p><p>Python, Home Assistant, HACS</p><ul><li><a href="https://github.com/pvignau/ha-samsung-frame-artwork">Le code</a></li></ul></li><li><h3>Daily Drive</h3><p>Spotify a arrêté son Daily Drive, alors je l&#39;ai refait : une playlist de musique et de podcasts, reconstruite chaque matin.</p><p>TypeScript, Next.js, API Spotify</p><ul><li><a href="https://github.com/pvignau/daily-drive">Le code</a></li><li><a href="https://my-daily-drive.vercel.app">Démo (alpha)</a></li></ul></li><li><h3>Bacs à sable design system</h3><p>Deux maquettes publiques : des tokens venus de Tokens Studio, compilés en SCSS et en Kotlin, et un design system Vue rangé dans Storybook.</p><p>Style Dictionary, Storybook, Vue</p><ul><li><a href="https://github.com/pvignau/ts-ds-boilerplate">Tokens SCSS et Kotlin</a></li><li><a href="https://github.com/pvignau/vue-storybook-design-system">Design system Vue</a></li></ul></li><li><h3>Ce mini-RPG</h3><p>Le site où tu te promènes : un portfolio en pixel art, codé en TypeScript, avec une version texte pour qui préfère lire.</p><p>TypeScript, Pixel art, Jeu web</p><ul><li><a href="https://github.com/pvignau/website">Le code</a></li></ul></li></ul><ul><li><a href="https://github.com/pvignau?tab=repositories">Tous mes dépôts</a></li></ul></section><section><h2>Lab IA et domotique</h2><p>Des diodes clignotent partout. Ici, je teste ce que l&#39;IA change à ma façon de coder.</p><p>Sur mes projets récents, je code en binôme avec Claude, un agent IA. Il cosigne les commits : c&#39;est écrit dans l&#39;historique.</p><p>L&#39;agent écrit vite. Moi, je fixe le cadre, je relis et je teste.</p><p>À la maison, Home Assistant pilote la domotique. J&#39;y branche mes propres outils :</p><ul><li>Une TV The Frame qui change de tableau toute seule.</li><li>Un pavé numérique qui lance des scripts, façon Stream Deck maison.</li></ul><p>Dans l&#39;arrière-salle :</p><ul><li>Un homelab qui héberge mes services.</li><li>Un assistant IA branché sur mes notes.</li></ul><p>Pas de plan du réseau ici : le reste du lab est fermé au public.</p><ul><li><a href="https://github.com/pvignau/ha-samsung-frame-artwork">Intégration The Frame</a></li><li><a href="https://github.com/pvignau/homeassistant-keypad-script-launcher">Pavé de scripts</a></li></ul></section><section><h2>Prendre le large</h2><p>Le bateau attend à quai. Où veux-tu aller ?</p><p>Une question ou un projet ? Écris-moi sur LinkedIn. Le code, lui, vit sur GitHub.</p><ul><li><a href="https://www.linkedin.com/in/pierre-yves-vignau-a99a9424/">LinkedIn</a></li><li><a href="https://github.com/pvignau">GitHub</a></li></ul></section></main>
     </div>
-    
   </body>
 </html>
