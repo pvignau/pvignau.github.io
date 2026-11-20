@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!--
+      Title, description, Open Graph tags and canonical URL come from src/content:
+      vite-plugins/site-pages.ts writes them in place of the next comment.
+    -->
+    <!-- site-meta -->
+    <title>Pyve&#39;s house · Pyve&#39;s world</title>
+    <meta name="description" content="Pyve&#39;s place: a web developer turned software architect at France Télévisions, his path, his tools and how he works." />
+    <link rel="canonical" href="https://pyve.is-a.dev/en/home" />
+    <link rel="alternate" hreflang="fr" href="https://pyve.is-a.dev/home" />
+    <link rel="alternate" hreflang="en" href="https://pyve.is-a.dev/en/home" />
+    <link rel="alternate" hreflang="x-default" href="https://pyve.is-a.dev/home" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pyve&#39;s world" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:title" content="Pyve&#39;s house · Pyve&#39;s world" />
+    <meta property="og:description" content="Pyve&#39;s place: a web developer turned software architect at France Télévisions, his path, his tools and how he works." />
+    <meta property="og:url" content="https://pyve.is-a.dev/en/home" />
+    <meta property="og:image" content="https://pyve.is-a.dev/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="In pixel art, the hero on the path in front of his house, the bridge to the other island and a boat at the quay." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" href="/assets/home-DZP-khgK.webp" as="image" />
+    <!-- /site-meta -->
+    <meta name="theme-color" content="#f6ecd2" />
+    <meta name="color-scheme" content="light" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <!-- The lettering of the loader and the HUD; Comic Neue 400 (text) comes when shown. -->
+    <link
+      rel="preload"
+      href="/assets/bangers-latin-400-normal-DeHY8Ncq.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/comic-neue-latin-700-normal-NE4Vcoll.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <script>
+      // The game could not start (its script did not load, or failed before the app
+      // ran, see src/main.tsx): show the text version written in the page instead.
+      addEventListener(
+        'error',
+        function (event) {
+          var root = document.documentElement;
+          var fatal = event.target instanceof HTMLScriptElement || event instanceof ErrorEvent;
+          if (fatal && !root.hasAttribute('data-app')) root.classList.add('no-game');
+        },
+        true,
+      );
+    </script>
+    <script nomodule>
+      document.documentElement.classList.add('no-game');
+    </script>
+    <script type="module" crossorigin src="/assets/index-CGDl0O-E.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BdlsArez.css">
+    <noscript><style>html #loader{display:none!important}html .static-page{display:block!important}html body{overflow:auto!important}</style></noscript>
+  </head>
+  <body>
+    <div id="root">
+      <div id="loader" class="loader" role="status">
+        <span class="loader__balloon" aria-hidden="true"
+          ><span></span><span></span><span></span
+        ></span>
+        <span class="loader__label">Loading the island…</span>
+      </div>
+      <!-- The text version (vite-plugins/static-page.ts), replaced by the game as it starts. -->
+      <!-- site-static --><main class="static-page"><header class="static-page__header"><h1>Pyve</h1><p class="static-page__role">Software architect</p><p><a href="/" hreflang="fr" lang="fr">Français</a></p><p class="static-page__intro">This portfolio is usually visited as a small game, which needs JavaScript to start. Here it is as text:</p><p>Pierre-Yves Vignau, aka Pyve, is a software architect: his portfolio is a small pixel-art archipelago, to explore like a mini-RPG. Each place tells part of his work, from the house to the jetty, and a text version has it all.</p></header><section><h2>Pyve&#39;s place</h2><p>The door creaks. Hi, I&#39;m Pyve. Pierre-Yves Vignau, for the record.</p><p>A web developer by training, based south of Paris. My playground: front-end architecture, design systems and design tokens.</p><p>Since April 2026, I&#39;ve been a software architect at France Télévisions, on a permanent contract. Before that, I was the design system&#39;s tech lead there, as a freelancer.</p><p>My inventory:</p><ul><li>Design tokens: Style Dictionary, Tokens Studio, Terrazzo, the DTCG format.</li><li>Front end: TypeScript, React, Vue, Next.js, Storybook.</li><li>Figma: plugins and bridges to the code.</li><li>Home automation: Home Assistant, in Python.</li><li>AI: I pair-program with an agent.</li></ul><p>My method: start from what exists, move in small steps, and write the docs, limits included.</p><p>The road so far:</p><ul><li>Since 2026: software architect, France Télévisions (permanent).</li><li>2023-2026: design system tech lead, France Télévisions (freelance).</li><li>2014-2023: Infopro Digital, from web developer to head of frontend, by way of lead dev and front-end architect.</li><li>2012-2014: web developer at agencies, PHP, Zend and Magento.</li></ul><p>Off the clock: dad of two, into video games and two-wheelers.</p><ul><li><a href="https://www.linkedin.com/in/pierre-yves-vignau-a99a9424/">My path on LinkedIn</a></li></ul></section><section><h2>A few projects</h2><p>The board is covered in posters. I&#39;ve kept a few, all of them public.</p><ul><li><h3>Design token contributions</h3><p>A bug in the Terrazzo CLI, reported then fixed, and a proposal for deprecated tokens in Tokens Studio, awaiting review.</p><p>Design tokens, DTCG, TypeScript</p><ul><li><a href="https://github.com/terrazzoapp/terrazzo/pull/533">Terrazzo fix</a></li><li><a href="https://github.com/tokens-studio/figma-plugin/pull/3834">Tokens Studio PR</a></li></ul></li><li><h3>Samsung Frame Artwork</h3><p>A Home Assistant integration that rotates paintings and photos on a The Frame TV, without cutting off what you&#39;re watching.</p><p>Python, Home Assistant, HACS</p><ul><li><a href="https://github.com/pvignau/ha-samsung-frame-artwork">The code</a></li></ul></li><li><h3>Daily Drive</h3><p>Spotify stopped its Daily Drive, so I rebuilt it: a playlist of music and podcasts, made anew every morning.</p><p>TypeScript, Next.js, Spotify API</p><ul><li><a href="https://github.com/pvignau/daily-drive">The code</a></li><li><a href="https://my-daily-drive.vercel.app">Demo (alpha)</a></li></ul></li><li><h3>Design system sandboxes</h3><p>Two public mock-ups: tokens from Tokens Studio, compiled to SCSS and Kotlin, and a Vue design system laid out in Storybook.</p><p>Style Dictionary, Storybook, Vue</p><ul><li><a href="https://github.com/pvignau/ts-ds-boilerplate">SCSS and Kotlin tokens</a></li><li><a href="https://github.com/pvignau/vue-storybook-design-system">Vue design system</a></li></ul></li><li><h3>This mini-RPG</h3><p>The site you&#39;re walking around, written in TypeScript, with its text version.</p><p>TypeScript, Pixel art, Web game</p><ul><li><a href="https://github.com/pvignau/website">The code</a></li></ul></li></ul><ul><li><a href="https://github.com/pvignau?tab=repositories">All my repositories</a></li></ul></section><section><h2>AI lab and home automation</h2><p>LEDs blink everywhere. This is where I try out what AI changes in the way I code.</p><p>On my recent projects, I pair-program with Claude, an AI agent.</p><p>It writes fast; I set the frame, then review and test what it suggests.</p><p>At home, Home Assistant runs the smart home. I plug my own tools into it:</p><ul><li>A The Frame TV that changes paintings on its own.</li><li>A numeric keypad that launches scripts, a homemade Stream Deck.</li></ul><p>In the back room:</p><ul><li>A homelab that hosts my services.</li><li>An AI assistant hooked up to my notes.</li></ul><p>No network map here: the rest of the lab is closed to the public.</p><ul><li><a href="https://github.com/pvignau/ha-samsung-frame-artwork">The Frame integration</a></li><li><a href="https://github.com/pvignau/homeassistant-keypad-script-launcher">Script keypad</a></li></ul></section><section><h2>Set sail</h2><p>The boat waits at the quay. Where do you want to go?</p><p>A question or a project? Write to me on LinkedIn. The code lives on GitHub.</p><ul><li><a href="https://www.linkedin.com/in/pierre-yves-vignau-a99a9424/">LinkedIn</a></li><li><a href="https://github.com/pvignau">GitHub</a></li></ul></section></main><!-- /site-static -->
+    </div>
+  </body>
+</html>
